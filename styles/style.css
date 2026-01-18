@@ -3,12 +3,16 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-nav{
+.navbar{
     background-color: #1A0B2E;
     display: flex;
-    padding:20px 200px;
+    max-width: 100%;
+    padding: 20px 200px;
     justify-content: space-between;
     align-items: center;
+}
+.humburger{
+    display:none;
 }
 .logo h1{
     color:White;
@@ -31,4 +35,120 @@ nav{
     padding:12.5px 16px;
     border-radius: 30px;
     border: none;
+}
+.banner-img{
+    position: relative;
+    width:300px;
+     z-index: 2;
+}
+.hero-crc{
+    width: 350px;
+}
+.mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+}
+.banner{
+background-image: url(../assets/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 100px 0;
+    border-top: 1px solid rgb(238, 61, 233);
+}
+.hero-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner-content{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner-content h2{
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+.banner-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.spot-btn{
+     color:white;
+    padding:12.5px 16px;
+    border-radius: 30px;
+    border: none;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.banner-btn{
+    display: flex;
+    gap:8px;
+}
+.subs-btn{
+    color:#00FF88;
+    padding:12.5px 16px;
+    border-radius: 30px;
+    border: 1px solid #00FF88;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.new{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-80%, 40%);
+    background: #00FF88;
+    color: #1A0B2E;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: none;
+    box-shadow: 0 0 14px rgba(0, 255, 136, 0.6);
+}
+@media  screen and (max-width:576px) {
+    .nav-btn,.nav-menu{
+        display: none;
+    }
+   .navbar{
+    flex-direction: row;
+    padding:10px 20px;
+   }
+    .humburger{
+        display: block;
+    }
+    .banner{
+        width: 100%;
+        flex-direction: column;
+    }
+    .mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-105%, -50%);
+  width: 80px;
+}
+.hero-crc{
+    width: 200px;
+}
+    
 }
