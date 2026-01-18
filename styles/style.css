@@ -1,0 +1,34 @@
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+nav{
+    background-color: #1A0B2E;
+    display: flex;
+    padding:20px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h1{
+    color:White;
+}
+.nav-menu{
+    color:white;
+}
+.nav-menu ul{
+    display: flex;
+    gap:30px;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu a{
+    text-decoration: none;
+}
+.nav-btn button{
+    color:white;
+    padding:12.5px 16px;
+    border-radius: 30px;
+    border: none;
+}
