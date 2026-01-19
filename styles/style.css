@@ -1,12 +1,14 @@
-
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
 }
-.navbar{
+nav{
     background-color: #1A0B2E;
+}
+.navbar{
     display: flex;
-    max-width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     padding: 20px 200px;
     justify-content: space-between;
     align-items: center;
@@ -36,20 +38,17 @@
     border-radius: 30px;
     border: none;
 }
-.banner-img{
-    position: relative;
-    width:300px;
-     z-index: 2;
-}
-.hero-crc{
-    width: 350px;
+.hero-crc {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 .mic{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px;
+  width: 120px;
 }
 .banner{
 background-image: url(../assets/hero-bg.png);
@@ -59,17 +58,20 @@ background-image: url(../assets/hero-bg.png);
     min-height: 100vh;
     max-width: 100%;
     width: 100%;
-    display: block;
+    display: grid;
+    place-items: center; 
     height: auto;
     padding: 100px 0;
     border-top: 1px solid rgb(238, 61, 233);
 }
-.hero-img{
+.hero-img {
+    position: relative;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
+
 .banner-content{
     color:white;
     display: flex;
@@ -113,18 +115,208 @@ background-image: url(../assets/hero-bg.png);
 }
 .new{
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-80%, 40%);
+   top: 26px;   
+   right: 65px;
     background: #00FF88;
     color: #1A0B2E;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 600;
-    padding: 6px 12px;
+    padding: 6px 20px;
     border-radius: 999px;
     border: none;
     box-shadow: 0 0 14px rgba(0, 255, 136, 0.6);
 }
+.about{
+    background-color: #1A0B2E;
+}
+.about-content{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 50px 200px 120px 200px;
+    text-align: center;
+}
+.upper h2, .why h1{
+    color:white;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.upper p{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.about-card{
+    display:flex;
+    flex-direction: column;
+}
+.about-card-container{
+    border-top: 0.5px solid white;
+    padding-top: 80px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.about-card h2{
+    color: #00FF88;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.about-card p{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.why{
+    background-color: #230E3D;
+}
+.why-con{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.premium h2, .mobile h2, .global h2, .exclusive h2, .rich h2{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 700;
+}
+.premium p, .mobile p, .global p, .exclusive p, .rich p{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.premium, .mobile, .global, .exclusive, .rich{
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 30px;
+    border: none;
+    padding: 40px;
+}
+.premium{
+    grid-area: premiumar;
+}
+.mobile{
+grid-area: mobilear;
+}
+.global{
+    grid-area: globalar;
+}
+.exclusive{
+    grid-area: exclusivear;
+}
+.rich{
+    grid-area: richar;
+}
+.why{
+    padding: 120px 200px;
+}
+.why-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.why-card-container{
+    display: grid;
+    gap:30px;
+    margin-top: 40px;
+     max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    grid-template-areas: 
+    "premiumar mobilear mobilear"
+    "premiumar globalar globalar"
+    "exclusivear exclusivear richar";
+}
+.feat{
+    background-color: #1A0B2E;
+    padding: 120px 200px;
+}
+.epi-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+}
+.epi-card{
+    background-color: #351165;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 400px;
+}
+.epi-head, .host-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.epi-head h1, .host-header h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+}
+
+.epi-card-des{
+    padding: 24px;
+     display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.epi-card h4{
+    font-size: 1.5rem;
+    font-weight:700;
+    color:white;
+}
+.des{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.btm{
+    color:#00FF88;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.host-con{
+    background-color: #351165;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:24px;
+    border-radius: 40px;
+   padding: 40px;
+    max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+.host-img{
+    width: 200px;
+    height: 200px;
+}
+.host{
+    margin-top: 120px;
+}
+
+.host-des h4{
+    font-size: 2rem;
+    font-weight: 700;
+    color:white;
+}
+.host-des p{
+    font-size: 1rem;
+    font-weight: 400;
+    color:white;
+}
+.sc-icon {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+.sc-icon img {
+  width: 28px;
+  cursor: pointer;
+}
+
 @media  screen and (max-width:576px) {
     .nav-btn,.nav-menu{
         display: none;
@@ -139,16 +331,46 @@ background-image: url(../assets/hero-bg.png);
     .banner{
         width: 100%;
         flex-direction: column;
+        padding: 0;
     }
-    .mic{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-105%, -50%);
-  width: 80px;
-}
-.hero-crc{
-    width: 200px;
-}
+    .banner-content{
+        padding: 0 20px;
+    }
+    .about{
+        padding: 20px 20px;
+    }
+     .about-content{
+        padding: 20px;
+    }
+    .about-card-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        gap: 20px;
+    }
+    .about-content,.upper{
+      padding: 20px 0;
+    text-align: center;
+    }
+    .upper h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .why{
+        padding: 20px;
+
+    }
+    .why-head h1{
+        font-size: 2rem;
+    }
+    .why-card-container{
+        grid-template-areas: 
+        "premiumar"
+        "mobilear"
+        "globalar"
+        "exclusivear"
+        "richar";
+        gap:20px;
+    }
+    
     
 }
