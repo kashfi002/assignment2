@@ -5,6 +5,14 @@
 nav{
     background-color: #1A0B2E;
 }
+button{
+    transition: 0.3s ease, transform 0.2s ease;
+}
+button:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+  transform: translateY(-2px);
+}
 .navbar{
     display: flex;
     max-width: 1440px;
@@ -238,6 +246,25 @@ grid-area: mobilear;
     margin: 0 auto;
     width: 100%;
 }
+.video-box {
+    position: relative;
+    display: inline-block;
+}
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
 .epi-card{
     background-color: #351165;
     border-radius: 40px;
@@ -313,8 +340,9 @@ grid-area: mobilear;
   margin-top: 16px;
 }
 .sc-icon img {
-  width: 28px;
+  width: 20px;
   cursor: pointer;
+
 }
 
 @media  screen and (max-width:576px) {
@@ -359,7 +387,7 @@ grid-area: mobilear;
         padding: 20px;
 
     }
-    .why-head h1{
+    .why-head h1, .epi-head h1, .host-header h1{
         font-size: 2rem;
     }
     .why-card-container{
@@ -370,6 +398,19 @@ grid-area: mobilear;
         "exclusivear"
         "richar";
         gap:20px;
+    }
+    .feat{
+        padding:10px;
+    }
+    .episodes{
+        padding:40px;
+    }
+    .epi-card-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .host-con{
+        grid-template-columns: repeat(1,1fr);
     }
     
     
