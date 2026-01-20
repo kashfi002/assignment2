@@ -47,7 +47,7 @@ button:hover{
     border: none;
 }
 .hero-crc {
-    width: 100%;
+    width: 500px;
     height: 100%;
     display: block;
 }
@@ -56,10 +56,10 @@ button:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 120px;
+  width: 150px;
 }
 .banner{
-background-image: url(../assets/hero-bg.png);
+background-image: url(../assets/Image\ \(2\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -72,12 +72,21 @@ background-image: url(../assets/hero-bg.png);
     padding: 100px 0;
     border-top: 1px solid rgb(238, 61, 233);
 }
+.bn-con{
+    max-width: 1440px;
+    margin: 0 auto;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 .hero-img {
     position: relative;
-    width: 350px;
+    width: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(-20px)
 }
 
 .banner-content{
@@ -124,7 +133,7 @@ background-image: url(../assets/hero-bg.png);
 .new{
     position: absolute;
    top: 26px;   
-   right: 65px;
+   right: 45px;
     background: #00FF88;
     color: #1A0B2E;
     font-size: 1.2rem;
@@ -323,7 +332,9 @@ grid-area: mobilear;
 .host{
     margin-top: 120px;
 }
-
+.host-des{
+    width: 900px;
+}
 .host-des h4{
     font-size: 2rem;
     font-weight: 700;
@@ -344,6 +355,65 @@ grid-area: mobilear;
   cursor: pointer;
 
 }
+footer{
+    background-image: url(../assets/footer-bg.png);
+     background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 420px;
+}
+.foot-cont{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px;
+    gap:40px;
+}
+.copyright p{
+     color:white;
+     font-size: 1rem;
+     font-weight: 400;
+}
+.foot-header h1{
+    color:white;
+    font-weight: 800;
+    font-size: 5rem;
+}
+.foot-header{
+    margin-bottom: 16px;
+
+}
+.foot-logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-left: 20px;
+}
+.appf, .youf, .spf{
+    border-right: 0.5px solid white;
+    padding-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.twf{
+    display: flex;
+     gap: 20px;
+}
+.appf p, .youf p, .spf p, .twf p{
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+    gap:20px
+}
 
 @media  screen and (max-width:576px) {
     .nav-btn,.nav-menu{
@@ -351,16 +421,33 @@ grid-area: mobilear;
     }
    .navbar{
     flex-direction: row;
-    padding:10px 20px;
+    padding:16px 20px;
    }
+
     .humburger{
         display: block;
     }
     .banner{
+        background-image: url(../assets/Image\ \(3\).png);
         width: 100%;
         flex-direction: column;
         padding: 0;
     }
+    .hero-img{
+        width: 240px;
+         transform: translateY(-80px)
+    }
+    .mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+}
+.new{
+   transform:translateX(80px);
+   padding: 8px 16px;
+}
     .banner-content{
         padding: 0 20px;
     }
@@ -412,6 +499,33 @@ grid-area: mobilear;
     .host-con{
         grid-template-columns: repeat(1,1fr);
     }
-    
-    
+    .host-des{
+        width: 400px;
+        padding-left: 10px;
+        padding-right: 24px;
+    }
+    footer{
+         width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .foot{
+        gap:40px;
+    }
+    .foot-logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:16px;
+    }
+    .foot-header h1{
+    color:white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+    .appf, .youf, .spf{
+        border: none;
+    }
+    .foot-cont{
+        padding: 40px 20px;
+    }
 }
