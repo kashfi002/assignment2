@@ -1,3 +1,4 @@
+
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -69,7 +70,7 @@ nav{
   width: 150px;
 }
 .banner{
-background-image: url(../assets/Image\ \(2\).png);
+background-image: url(../assets/hero-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -438,14 +439,14 @@ footer{
         display: block;
     }
     .banner{
-        background-image: url(../assets/Image\ \(3\).png);
+        background-image: url(../assets/foot.png);
         width: 100%;
         flex-direction: column;
         padding: 0;
     }
     .hero-img{
         width: 240px;
-         transform: translateY(-80px)
+         transform: translateY(-180px)
     }
     .mic{
   position: absolute;
@@ -553,14 +554,14 @@ footer{
         display: block;
     }
     .banner{
-        background-image: url(../assets/Image\ \(3\).png);
+        background-image: url(../assets/foot.png);
         width: 100%;
         flex-direction: column;
         padding: 0;
     }
     .hero-img{
         width: 240px;
-         transform: translateY(-80px)
+         transform: translateY(-180px)
     }
     .mic{
   position: absolute;
@@ -622,7 +623,7 @@ footer{
         
     }
     .host-con{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .host-des{
         width: 100%;
