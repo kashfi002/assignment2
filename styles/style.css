@@ -5,14 +5,24 @@
 nav{
     background-color: #1A0B2E;
 }
-button{
-    transition: 0.3s ease, transform 0.2s ease;
+.btn-animate {
+  transition:
+    transform 0.25s cubic-bezier(.34,1.56,.64,1),
+    background-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
-button:hover{
-    cursor: pointer;
-    background-color: antiquewhite;
-  transform: translateY(-2px);
+
+.btn-animate:hover {
+  background-color: #ffffff;
+  color: #000;
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.3);
 }
+
+.btn-animate:active {
+  transform: scale(1.03) translateY(-1px);
+}
+
 .navbar{
     display: flex;
     max-width: 1440px;
@@ -498,6 +508,7 @@ footer{
     }
     .host-con{
         grid-template-columns: repeat(1,1fr);
+        padding-left: 10px;
     }
     .host-des{
         width: 400px;
@@ -527,5 +538,119 @@ footer{
     }
     .foot-cont{
         padding: 40px 20px;
+    }
+}
+@media  screen and (min-width:576px) and (max-width:992px) {
+    .nav-btn,.nav-menu{
+        display: none;
+    }
+   .navbar{
+    flex-direction: row;
+    padding:16px 20px;
+   }
+
+    .humburger{
+        display: block;
+    }
+    .banner{
+        background-image: url(../assets/Image\ \(3\).png);
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .hero-img{
+        width: 240px;
+         transform: translateY(-80px)
+    }
+    .mic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+}
+.new{
+   transform:translateX(80px);
+   padding: 8px 16px;
+}
+    .banner-content{
+        padding: 0 20px;
+    }
+    .about{
+        padding: 20px 20px;
+    }
+     .about-content{
+        padding: 20px;
+    }
+    .about-card-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        gap: 20px;
+    }
+    .about-content,.upper{
+      padding: 20px 0;
+    text-align: center;
+    }
+    .upper h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .why{
+        padding: 20px;
+
+    }
+    .why-head h1, .epi-head h1, .host-header h1{
+        font-size: 2rem;
+    }
+    .why-card-container{
+        grid-template-areas: 
+        "premiumar"
+        "mobilear"
+        "globalar"
+        "exclusivear"
+        "richar";
+        gap:20px;
+    }
+    .feat{
+        padding:10px;
+    }
+    .episodes{
+        padding:40px;
+    }
+    .epi-card-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .host-con{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .host-des{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 24px;
+    }
+    footer{
+         width: 100%;
+        flex-direction: column;
+        padding: 0;
+    }
+    .foot{
+        gap:40px;
+    }
+    .foot-logo{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:16px;
+    }
+    .foot-header h1{
+    color:white;
+    font-weight: 700;
+    font-size: 2rem;
+}
+    .appf, .youf, .spf{
+        border: none;
+    }
+    .foot-cont{
+        padding: 120px 20px;
     }
 }
